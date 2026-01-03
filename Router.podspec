@@ -16,13 +16,10 @@ Pod::Spec.new do |s|
   s.author           = { 'claustrofob' => 'claus@zlog.ru' }
   s.source           = { :git => 'https://github.com/claustrofob/Router.git', :tag => s.version }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '15.0'
   s.swift_version = '5.0'
 
   s.source_files = 'Router/Classes/**/*'
   s.frameworks = 'UIKit'
-
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
